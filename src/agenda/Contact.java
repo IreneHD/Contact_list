@@ -1,13 +1,24 @@
 package agenda;
-
+/**
+ * Clase donde se encuentras los atributos de la agenda de la base de datos
+ * 
+ * @author Irene Hermida Díaz
+ *
+ */
 public class Contact {
-
 	private String Nombre;
 	private String Apellidos;
 	private String Dirección;
 	private String Correo;
 	private String Teléfono;
-
+	/**
+	 * 
+	 * @param Name
+	 * @param Surnames
+	 * @param Address
+	 * @param Email
+	 * @param Mobile
+	 */
 	public Contact(String Name, String Surnames, String Address, String Email, String Mobile) {
 		Nombre = Name;
 		Apellidos = Surnames;
@@ -16,6 +27,9 @@ public class Contact {
 		Teléfono = Mobile;
 	}
 
+	/**
+	 * Método mostrar
+	 */
 	public void mostrarContacto() {
 		System.out.println("");
 		System.out.println("---------------CONTACTO-----------------");

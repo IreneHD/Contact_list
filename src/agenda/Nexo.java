@@ -7,16 +7,23 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.swing.JOptionPane;
-
+/**
+ * 
+ *Clase que conecta con la base de datos MySQL
+ *
+ *
+ * @author Irene Hermida Díaz
+ *
+ */
 public class Nexo {
-
+	
 	private static Connection nexo;
-
+	
 	private static final String cadena_MySQL = "com.mysql.cj.jdbc.Driver";
 	private static final String cadena_nexo = "jdbc:mysql://localhost:3306/Contact_list?serverTimezone=UTC";
 	private static final String usuario = "root";
 	private static final String clave = "1111";
-
+	
 	public static void conectar() {
 		try {
 			Class.forName(cadena_MySQL);
@@ -26,7 +33,10 @@ public class Nexo {
 			e.printStackTrace();
 		}
 	}
-
+	/**
+	 * 
+	 * @param Email_Mobile
+	 */
 	public static void mostrar(String Email_Mobile) {
 		Statement statement = null;
 		ResultSet resultSet = null;

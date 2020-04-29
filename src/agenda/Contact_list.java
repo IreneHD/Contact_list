@@ -1,11 +1,18 @@
 package agenda;
 
 import java.util.Scanner;
-
+/**
+ * Clase donde se encuentra el menú de la agenda
+ * 
+ * @author Irene Hermida Díaz
+ *
+ */
 public class Contact_list {
-
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String args[]) {
-
 		Nexo.conectar();
 
 		Scanner teclado = new Scanner(System.in);
@@ -37,6 +44,5 @@ public class Contact_list {
 				break;
 			}
 		} while (parametro != 2);
-
 	}
 }
